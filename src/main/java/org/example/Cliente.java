@@ -17,7 +17,8 @@ public class Cliente {
         if (clientes.isEmpty()){
             System.out.println("No se a registrado ningun cliente");
         }else {
-            System.out.println("El siguiente cliente esta siendo atendido: " + clientes.getFirst());
+            String clienteAtendido = clientes.pollFirst();
+            System.out.println("El siguiente cliente esta siendo atendido: " + clienteAtendido);
         }
     }
 }
